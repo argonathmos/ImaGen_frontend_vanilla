@@ -1,6 +1,7 @@
 # ImaGen frontend vanilla
-[see it live here: ] (https://imagen-vanilla.netlify.app/) 
+[see it live here!](https://imagen-vanilla.netlify.app/) 
 
+![screenshot](Screenshot_2020-12-15 Vanilla front-end.png)
 ---
 
 ## WHAT ?
@@ -24,6 +25,7 @@ The answers are generated in seconds and displayed in the form of an image!
 4. The app then receives a randomly generated image and displays it to the user. 
 
 This frontend app was build using vanilla JS (es6+), Axios, Parcel and Netlify.
+
 --- 
 ## WHY ?
 
@@ -32,4 +34,4 @@ This frontend app was build using vanilla JS (es6+), Axios, Parcel and Netlify.
 - Scratch the surface of continous deployement with Git / Netlify.
  
 The ImaGen_REST_API is hosted on heroku and itsefl places calls to 3rd party APIs. 
-[You can find more info about the API here:] (link to ImaGen_REST_API)
+[You can find more info about the API here:](link to ImaGen_REST_API)
