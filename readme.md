@@ -20,7 +20,7 @@ The answers are generated in seconds and displayed in the form of an image!
 
 4. The app then receives a randomly generated image and displays it to the user. 
 
-This frontend app was build using vanilla JS (es6+), Axios, Parcel and Netlify.
+This frontend app was built using vanilla JS (es6+), Axios, Parcel and Netlify.
 
 ## WHY ?
 
