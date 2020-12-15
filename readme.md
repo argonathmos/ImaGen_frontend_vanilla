@@ -1,7 +1,7 @@
 # ImaGen frontend vanilla
-[see it live here!](https://imagen-vanilla.netlify.app/) 
+see it live here: https://imagen-vanilla.netlify.app/ 
 
-![screenshot](Screenshot_2020-12-15 Vanilla front-end.png)
+![screenshot](https://github.com/argonathmos/ImaGen_frontend_vanilla/blob/master/Screenshot_2020-12-15%20Vanilla%20front-end.png)
 ---
 
 ## WHAT ?
@@ -29,7 +29,7 @@ This frontend app was build using vanilla JS (es6+), Axios, Parcel and Netlify.
 --- 
 ## WHY ?
 
-- Practice communicating with a REST API through a simple, modern and fun interface.
+- Practice communicating with a REST API through a simple, modern and fun interface. :slightly_smiling_face:
 - Implementing a build toolchain (Parcel).
 - Scratch the surface of continous deployement with Git / Netlify.
  
