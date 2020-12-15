@@ -1,7 +1,5 @@
 # ImaGen frontend vanilla
-[see it live here: ] (https://imagen-vanilla.netlify.app/) 
-
----
+see it live here: https://imagen-vanilla.netlify.app/
 
 ## WHAT ?
 This web application aims at helping a user navigating through life's most difficult questions, by asking three most trusted advisors: Mr Tumblr, Lady Pixabay and Lady DuckDuckGo any of the following: 
@@ -13,7 +11,6 @@ This web application aims at helping a user navigating through life's most diffi
 
 The answers are generated in seconds and displayed in the form of an image! 
 
----
 ## HOW ?
 1. First users select who they want to get answers from (DuckDuckGo, Pixabay or Tumblr)
 
@@ -24,7 +21,7 @@ The answers are generated in seconds and displayed in the form of an image!
 4. The app then receives a randomly generated image and displays it to the user. 
 
 This frontend app was build using vanilla JS (es6+), Axios, Parcel and Netlify.
---- 
+
 ## WHY ?
 
 - Practice communicating with a REST API through a simple, modern and fun interface.
@@ -32,4 +29,4 @@ This frontend app was build using vanilla JS (es6+), Axios, Parcel and Netlify.
 - Scratch the surface of continous deployement with Git / Netlify.
  
 The ImaGen_REST_API is hosted on heroku and itsefl places calls to 3rd party APIs. 
-[You can find more info about the API here:] (link to ImaGen_REST_API)
+[You can find more info about the API here] (link to ImaGen_REST_API)
