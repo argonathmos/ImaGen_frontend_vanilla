@@ -34,4 +34,4 @@ This frontend app was build using vanilla JS (es6+), Axios, Parcel and Netlify.
 - Scratch the surface of continous deployement with Git / Netlify.
  
 The ImaGen_REST_API is hosted on heroku and itsefl places calls to 3rd party APIs. 
-[You can find more info about the API here:](link to ImaGen_REST_API)
+You can find more info about the API here: https://github.com/argonathmos/ImaGen_REST_API
