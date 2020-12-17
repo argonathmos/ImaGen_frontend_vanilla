@@ -1,0 +1,219 @@
+/* general styles */
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+    background-color: #272936;
+    color: #A6A8B6;
+}
+body{
+    box-sizing: border-box;
+    height:100vh;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 2px solid green;  */
+}
+
+/* image layout */
+#img-container{
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    max-height:50vh;
+    width:100vw;
+    height:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* Reference for absolutely positioned welcome-msg*/
+    position:relative;
+}
+.welcome-msg{
+    color:white;
+    text-align:center;
+    height:5vh;
+}
+.lady-say{
+    height:5vh;
+    margin: 0;
+    line-height: 5vh;
+    color:white;
+    /* display:none; */
+}
+
+.random-img{
+    max-width:98%;
+    max-height:calc(98% - 5vh);
+
+    
+}
+
+
+/* Styling for the input type=radio and label */
+/* the label wraps a span and an image*/
+/* input and label are adjacent (wrapped in the same .container) to use the :checked on both */
+/* label is the same size  as the .container to make use of the clicbility of hte label which triggers the :checked*/
+#filters{
+    box-sizing:border-box;
+    display:flex;
+    /* border: 2px solid red; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+#filters .container{
+    /* Acts as a reference for the positioning of the radio button (input)*/
+    position:relative;
+}
+#filters label{
+    box-sizing:border-box;
+    width: 32vw;
+    max-width:180px;
+    height:12vh;
+    /* leave room on the left of the label for the absolutely positioned radio button */
+    padding: 8px 3px 8px 28px;
+    
+    /* Align the span and the img*/
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+    
+    /* prepare the border effect for :hover and input:checked + label*/
+    border-radius: 6px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    transition: all 300ms ease-in;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.3em;
+    
+}
+#filters label:hover {
+    border-color: #4062F6;
+    background-color: rgba(97, 154, 234, 0.16); /* #619AEA*/
+  }
+#filters input{
+/* removing all default styles from the radio btn */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+
+/* creating a custom radio btn */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    
+    border: 2px solid #454861;
+    background-image: linear-gradient(to bottom, #3B4059, #1C1E2D);
+    position: absolute;
+    top:calc(6vh - 10px - 2.5px); /* 6vh: half label/container height - 10px: half the radio button height but radio buttons are traditionnaly offset to the bottom so we counter this ofcet by 2.5px so it appears centered */
+    left:4px;
+}
+#filters  input:checked{
+    border: 7px solid #4363EE;
+    background-color: #fff;
+    background-image: none;
+    outline:0;
+
+    /* border-color:linear-gradient(to top right, #6E89FF, #4363EE); */
+ 
+}
+#filters  input:checked + span{
+    color:#fff;
+}
+#filters  input:checked + label{
+    color:#fff;
+    border-color: #4062F6;
+    background-color: rgba(97, 154, 234, 0.16); /* #619AEA*/
+}
+
+#filters .container img{
+    width:40%;
+    max-width: 50px;
+}
+
+
+
+
+hr{
+    width:90%;
+    color: #f0f;
+}
+
+/* buttons layout */
+#buttons-container{
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: min(4vw, 4vh);
+}
+/* wrap each button with a container in order to have a gradient border radius*/
+
+.cont{
+    background: linear-gradient(45deg, #40BBF5 0%,#4062F6 100%);
+    border-radius:6px;
+    min-height: calc(12vh + 4px);
+    width: calc(40vw + 4px);
+    max-width: 254px;
+    /* box-shadow: -0.5em .5em rgb(224, 9, 243); */
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.5s;
+}
+.cont button{
+    border:none;
+    
+    min-height: 12vh;
+    width: 40vw;
+    max-width: 250px;
+    padding:10px 25px; 
+    border-radius: 4px;
+    background:#272936;
+    color:#e8e9f1;
+    cursor: pointer;
+    font-size:14px;
+    transition: font-size 0.1s ease-in-out;
+    
+    
+}
+.cont:hover{
+    cursor:pointer;
+    background-image:linear-gradient(45deg, #40BBF5 10%,#ff00ff 100%);
+}
+.cont:hover button{
+    color:#fff;
+     
+    
+}
+.cont:active button{
+    background: #ff00ff;
+    color:#fff;
+    font-size:14.5px; 
+        
+}
+.cont:active{
+    background-image:linear-gradient(45deg, #40BBF5 10%,#ff00ff 100%);
+    
+}
+
+.cont:focus{
+    outline:none;
+}
+
+@media screen and (min-width: 900px){
+    #buttons-container{
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+}
+
+/*# sourceMappingURL=/style-pixabay.35267a36.css.map */
