@@ -5,7 +5,7 @@ see it live here: https://imagen-vanilla.netlify.app/
 ---
 
 ## WHAT ?
-This web application aims at helping a user navigating through life's most difficult questions, by asking three most trusted advisors: Mr Tumblr, Lady Pixabay and Lady DuckDuckGo any of the following: 
+This web application aims at helping a user navigating through life's most difficult questions, by asking three most trusted advisors: **Mr Tumblr**, **Lady Pixabay** and **Lady DuckDuckGo** any of the following: 
 
 - What should I eat tonight ? 
 - I want a hot drink !? 
