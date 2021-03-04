@@ -30,26 +30,14 @@ body{
     /* Reference for absolutely positioned welcome-msg*/
     position:relative;
 }
-.welcome-msg{
-    color:white;
+h1{
     text-align:center;
-    height:5vh;
-}
-.lady-say{
-    height:5vh;
-    margin: 0;
-    line-height: 5vh;
-    color:white;
-    /* display:none; */
 }
 
 .random-img{
     max-width:98%;
-    max-height:calc(98% - 5vh);
-
-    
+    max-height:calc(98% - 5vh);    
 }
-
 
 /* Styling for the input type=radio and label */
 /* the label wraps a span and an image*/
@@ -215,3 +203,5 @@ hr{
         
     }
 }
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

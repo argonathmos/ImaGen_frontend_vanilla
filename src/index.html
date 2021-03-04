@@ -1,74 +1,111 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8" />
-        <title>ImaGen - Vanilla</title>
-        <link rel="icon" href="images/favico.png" />
-        <!-- <link rel="icon" href="favicon-test2.png" type="image/x-icon" /> -->
-        <meta name="author" content="Thomas Dargon" />
-        <meta
-            name="description"
-            content="Personal exercise to use a RESTful API, 
+  <head>
+    <meta charset="utf-8" />
+    <title>ImaGen - Vanilla</title>
+    <link rel="icon" href="images/favico.png" />
+    <!-- <link rel="icon" href="favicon-test2.png" type="image/x-icon" /> -->
+    <meta name="author" content="Thomas Dargon" />
+    <meta
+      name="description"
+      content="Personal exercise to use a RESTful API, 
                    placing HTTP requests with JavaScript"
+    />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div id="img-container">
+      <h1 class="message">
+        Meet Lady P, Lady D and M. Tumblr, <br />
+        you can ask them anything!
+      </h1>
+      <img class="random-img" src="images/start-img.jpg" />
+    </div>
+    <hr />
+    <div id="filters">
+      <div class="container">
+        <input
+          type="radio"
+          name="filters"
+          id="px-filter"
+          value="pixabay"
+          data-title="Lady P"
+          checked
         />
+        <label for="px-filter">
+          <!-- We want the radio to be checkable when clicking on the extended area of the label-->
+          <span>Lady<br />P</span>
+          <img
+            src="images/pixabay_logo_square.svg"
+            alt="pixabay logo"
+          />
+        </label>
+      </div>
 
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <link href="./style-pixabay.css" rel="stylesheet" />
-        <script src="./script-pixabay.js" defer></script>
-    </head>
+      <div class="container">
+        <input
+          type="radio"
+          name="filters"
+          id="ddg-filter"
+          value="duckduckgo"
+          data-title="Lady D"
+        />
+        <label for="ddg-filter">
+          <!-- We want the radio to be checkable when clicking on the extended area of the label-->
+          <span>Lady<br />D</span>
+          <img src="images/ddg_logo.svg" alt="duckduckgo logo" />
+        </label>
+      </div>
+      <div class="container">
+        <input
+          type="radio"
+          name="filters"
+          id="tb-filter"
+          value="tumblr"
+          data-title="Mr Tumblr"
+        />
+        <label for="tb-filter">
+          <!-- We want the radio to be checkable when clicking on the extended area of the label-->
+          <span>M.<br />Tumblr</span>
+          <img src="images/tumblr_logo.png" alt="tumblr logo" />
+        </label>
+      </div>
+    </div>
+    <hr />
+    <div id="buttons-container">
+      <div class="cont">
+        <button id="drinks-btn" value="coffee tea soup">
+          I want a hot drink !
+        </button>
+      </div>
 
-    <body>
-        
-        <div id="img-container">
-            <h1 class='lady-say'></h1>
-            <h2 class='welcome-msg'>Meet Lady P, Lady D and M. Tumblr, <br>
-                you can ask them anything!</h2>
-            <img class="random-img" src="images/start-img.jpg" />
-            
-        </div>
-        <hr>
-        <div id="filters">
-            <div class="container">
-                <input type="radio" name="filters" id="px-filter" value="pixabay" data-title="Lady P" checked>
-                <label for="px-filter" > <!-- We want the radio to be checkable when clicking on the extended area of the label-->
-                    <span>Lady<br>P</span>
-                    <img src='images/pixabay_logo_square.svg' alt='pixabay logo'/>
-                </label>
-            </div>
+      <div class="cont">
+        <button
+          id="transports-btn"
+          value="skateboard bicycle scooter"
+        >
+          No public transports today ?
+        </button>
+      </div>
 
-            <div class="container">
-                <input type="radio" name="filters" id="ddg-filter" value="duckduckgo" data-title="Lady D">
-                <label for="ddg-filter" > <!-- We want the radio to be checkable when clicking on the extended area of the label-->
-                    <span>Lady<br>D</span>
-                    <img src='images/ddg_logo.svg' alt='duckduckgo logo'/>
-                </label>
-            </div>
-            <div class="container">
-                <input type="radio" name="filters" id="tb-filter" value="tumblr" data-title="Mr Tumblr">
-                <label for="tb-filter" > <!-- We want the radio to be checkable when clicking on the extended area of the label-->
-                    <span>M.<br>Tumblr</span>
-                    <img src='images/tumblr_logo.png' alt='tumblr logo'/>
-                </label>
-            </div>
-            
-        </div>
-        <hr>
-        <div id="buttons-container">
-            <div class="cont">
-                <button id="drinks-btn" value="coffee tea soup">I want a hot drink !</button>
-            </div>
-            
-            <div class="cont">
-                <button id="transports-btn" value="skateboard bicycle scooter">No public transports today ?</button>
-            </div>
-            
-            <div class="cont">
-                <button id="dinner-btn" value="veggies fastfood fish">What should I eat tonight ?</button>
-            </div>
+      <div class="cont">
+        <button id="dinner-btn" value="veggies fastfood fish">
+          What should I eat tonight ?
+        </button>
+      </div>
 
-            <div class="cont">
-                <button id="nature-btn" value="mountain lake sea field">Show me something great !</button>
-            </div>
-        </div>
-    </body>
+      <div class="cont">
+        <button id="nature-btn" value="mountain lake sea field">
+          Show me something great !
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
